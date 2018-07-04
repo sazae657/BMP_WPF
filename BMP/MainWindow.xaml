@@ -14,10 +14,10 @@
         </Grid.RowDefinitions>
         <TextBox x:Name="inputBox" Height="23" Margin="10,26,10,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="inputBox_TextChanged"/>
         <Label Content="ｶﾝﾏ区切りで入れれ" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="110"/>
-        <TextBox x:Name="binDisp8" Height="23" Margin="10,24,10,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="MS Gothic" IsReadOnly="True" BorderThickness="0"/>
-        <TextBox x:Name="binDisp16" Height="23" Margin="10,52,10,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="MS Gothic" IsReadOnly="True" BorderThickness="0"/>
-        <TextBox x:Name="binDisp32" Height="23" Margin="10,80,10,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="MS Gothic" IsReadOnly="True" BorderThickness="0"/>
-        <TextBox x:Name="binDisp64" Height="23" Margin="10,108,10,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="MS Gothic" IsReadOnly="True" BorderThickness="0"/>
+        <TextBox x:Name="binDisp8" Height="23" Margin="10,24,10,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="MS Gothic" IsReadOnly="True" BorderThickness="0" MouseDoubleClick="ﾀﾞﾎﾞーｸﾘｯｸ"/>
+        <TextBox x:Name="binDisp16" Height="23" Margin="10,52,10,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="MS Gothic" IsReadOnly="True" BorderThickness="0" MouseDoubleClick="ﾀﾞﾎﾞーｸﾘｯｸ"/>
+        <TextBox x:Name="binDisp32" Height="23" Margin="10,80,10,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="MS Gothic" IsReadOnly="True" BorderThickness="0" MouseDoubleClick="ﾀﾞﾎﾞーｸﾘｯｸ"/>
+        <TextBox x:Name="binDisp64" Height="23" Margin="10,108,10,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="MS Gothic" IsReadOnly="True" BorderThickness="0" MouseDoubleClick="ﾀﾞﾎﾞーｸﾘｯｸ"/>
         <TextBox x:Name="settyText8" Height="23" Margin="10,10,10,0" Grid.Row="2" TextWrapping="Wrap"  VerticalAlignment="Top" FontFamily="MS Gothic" FontSize="14" IsReadOnly="True" BorderThickness="0" MouseDoubleClick="ﾀﾞﾎﾞーｸﾘｯｸ"/>
         <TextBox x:Name="settyText16" Height="23" Margin="10,38,10,0" Grid.Row="2" TextWrapping="Wrap"  VerticalAlignment="Top" FontFamily="MS Gothic" FontSize="14" IsReadOnly="True" BorderThickness="0" MouseDoubleClick="ﾀﾞﾎﾞーｸﾘｯｸ"/>
         <TextBox x:Name="settyText32" Height="23" Margin="10,66,10,0" Grid.Row="2" TextWrapping="Wrap"  VerticalAlignment="Top" FontFamily="MS Gothic" FontSize="14" IsReadOnly="True" BorderThickness="0" MouseDoubleClick="ﾀﾞﾎﾞーｸﾘｯｸ"/>
