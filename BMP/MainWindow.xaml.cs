@@ -98,7 +98,7 @@ namespace BMP
                     ret += " ";
                 }
             }
-            return ret;
+            return string.Join("", ret.Reverse());
         }
 
         byte 八ﾏｽｸ(string arg) =>
