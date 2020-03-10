@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -48,6 +49,34 @@ namespace BMP
             }
             inputBox.Background = 元の色;
             設定(inputBox.Text.Trim());
+        }
+
+        private void inputBox2_TextChanged(object sender, TextChangedEventArgs e) {
+            if (inputBox2.Text.Length == 0) {
+                return;
+            }
+            if (!Regex.IsMatch(inputBox2.Text, @"\A[0-9A-Fa-f]+\Z")) {
+                var bc = new BrushConverter();
+                inputBox2.Background = (Brush)bc.ConvertFrom("#AAFF0000");
+                return;
+            }
+            inputBox2.Background = 元の色;
+            var sb = new StringBuilder();
+            int i = 0;
+            foreach (var n in 二進に変換(Convert.ToUInt64(inputBox2.Text, 16), BIT_SIZE.Size64)) 
+            {
+                if (n == ' ') {
+                    continue;
+                }
+                i++;
+                if (n == '1') {
+                    if (sb.Length != 0) {
+                        sb.Append(',');
+                    }
+                    sb.Append(i);
+                }
+            }
+            inputBox.Text = sb.ToString();
         }
 
         private void ﾀﾞﾎﾞーｸﾘｯｸ(object sender, MouseButtonEventArgs e) {
@@ -142,5 +171,7 @@ namespace BMP
             }
             return (UInt64)((uint)l | ((UInt64)u) << 32);
         }
+
+
     }
 }
